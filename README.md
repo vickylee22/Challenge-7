@@ -41,17 +41,17 @@ Complete the following steps:
 
    - Using the SQL statement, read the data from the database into a Pandas DataFrame, and then review the resulting DataFrame.
 
-    - Select the “time” and “close” columns for those dates where the closing price was higher than 200.0.
+   - Select the “time” and “close” columns for those dates where the closing price was higher than 200.0.
 
 2. Find the top 10 daily returns for PYPL by completing the following steps:
 
-  - Write a SQL statement to find the top 10 PYPL daily returns. Make sure to do the following:
+   - Write a SQL statement to find the top 10 PYPL daily returns. Make sure to do the following:
 
-    - Use ```SELECT``` to select only the “time” and “daily_returns” columns.
+      - Use ```SELECT``` to select only the “time” and “daily_returns” columns.
 
-    - Use ```ORDER``` to sort the results in descending order by the “daily_returns” column.
+      - Use ```ORDER``` to sort the results in descending order by the “daily_returns” column.
 
-    - Use ```LIMIT``` to limit the results to the top 10 daily return values.
+      - Use ```LIMIT``` to limit the results to the top 10 daily return values.
 
   - Using the SQL statement, read the data from the database into a Pandas DataFrame, and then review the resulting DataFrame.
 
@@ -68,16 +68,14 @@ Complete the following steps:
 
 2. Create a DataFrame that averages the “daily_returns” columns for all four assets. Review the resulting DataFrame.
 
-> **Hint** Assuming that this ETF contains equally weighted returns, you can average the returns for each asset to get the average returns of the portfolio. You can then use the average returns of the portfolio to calculate the annualized returns and the cumulative returns. For the calculation to get the average daily returns for the portfolio, use the following code:
-
-etf_portfolio_returns = etf_portfolio['daily_returns'].mean(axis=1)
-You can use the average daily returns of the portfolio the same way that you used the daily returns of a single asset.
+> **Hint** Assuming that this ETF contains equally weighted returns, you can average the returns for each asset to get the average returns of the portfolio. You can then use the average returns of the portfolio to calculate the annualized returns and the cumulative returns. For the calculation to get the average daily returns for the portfolio, use the following code: 
+> etf_portfolio_returns = etf_portfolio['daily_returns'].mean(axis=1)
+> You can use the average daily returns of the portfolio the same way that you used the daily returns of a single asset.
 
 3. Use the average daily returns in the ```etf_portfolio_returns``` DataFrame to calculate the annualized returns for the portfolio. Display the annualized return value of the ETF portfolio.
 
 > **Hint** To calculate the annualized returns, multiply the mean of the ```etf_portfolio_returns``` values by 252.
-
-To convert the decimal values to percentages, multiply the results by 100.
+> To convert the decimal values to percentages, multiply the results by 100.
 
 1. Use the average daily returns in the ```etf_portfolio_returns``` DataFrame to calculate the cumulative returns of the ETF portfolio.
 
