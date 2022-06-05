@@ -1,19 +1,19 @@
-# Create a Web Application for an ETF Analyzer
+# **Create a Web Application for an ETF Analyzer**
 In this Challenge assignment, you’ll build a financial database and web application by using SQL, Python, and the Voilà library to analyze the performance of a hypothetical fintech ETF.
 
 Instructions:
 
 Use this notebook to complete your analysis of a fintech ETF that consists of four stocks: GOST, GS, PYPL, and SQ. Each stock has its own table in the ```etf.db``` database, which the ```Starter_Code``` folder also contains.
 
-Analyze the daily returns of the ETF stocks both individually and as a whole. Then deploy the visualizations to a web application by using the Voilà library.
+- Analyze the daily returns of the ETF stocks both individually and as a whole. Then deploy the visualizations to a web application by using the Voilà library.
 
-The detailed instructions are divided into the following parts:
+- The detailed instructions are divided into the following parts:
 
-Analyze a single asset in the ETF
+- Analyze a single asset in the ETF
 
-Optimize data access with Advanced SQL queries
+- Optimize data access with Advanced SQL queries
 
-## Analyze the ETF portfolio
+## **Analyze the ETF portfolio**
 
 Deploy the notebook as a web application
 
@@ -30,7 +30,7 @@ Using hvPlot, create an interactive visualization for the PYPL daily returns. Re
 
 Using hvPlot, create an interactive visualization for the PYPL cumulative returns. Reflect the “time” column of the DataFrame on the x-axis. Make sure that you professionally style and format your visualization to enhance its readability.
 
-## Optimize Data Access with Advanced SQL Queries
+## **Optimize Data Access with Advanced SQL Queries**
 For this part of the assignment, you’ll continue to analyze a single asset (PYPL) from the ETF. You’ll use advanced SQL queries to optimize the efficiency of accessing data from the database.
 
 Complete the following steps:
@@ -55,7 +55,7 @@ Use LIMIT to limit the results to the top 10 daily return values.
 
 Using the SQL statement, read the data from the database into a Pandas DataFrame, and then review the resulting DataFrame.
 
-## Analyze the ETF Portfolio
+## **Analyze the ETF Portfolio**
 For this part of the assignment, you’ll build the entire ETF portfolio and then evaluate its performance. To do so, you’ll build the ETF portfolio by using SQL joins to combine all the data for each asset.
 
 Complete the following steps:
@@ -68,14 +68,14 @@ Using the SQL query, read the data from the database into a Pandas DataFrame. Re
 
 Create a DataFrame that averages the “daily_returns” columns for all four assets. Review the resulting DataFrame.
 
-Hint Assuming that this ETF contains equally weighted returns, you can average the returns for each asset to get the average returns of the portfolio. You can then use the average returns of the portfolio to calculate the annualized returns and the cumulative returns. For the calculation to get the average daily returns for the portfolio, use the following code:
+> **Hint** Assuming that this ETF contains equally weighted returns, you can average the returns for each asset to get the average returns of the portfolio. You can then use the average returns of the portfolio to calculate the annualized returns and the cumulative returns. For the calculation to get the average daily returns for the portfolio, use the following code:
 
 etf_portfolio_returns = etf_portfolio['daily_returns'].mean(axis=1)
 You can use the average daily returns of the portfolio the same way that you used the daily returns of a single asset.
 
 Use the average daily returns in the etf_portfolio_returns DataFrame to calculate the annualized returns for the portfolio. Display the annualized return value of the ETF portfolio.
 
-Hint To calculate the annualized returns, multiply the mean of the etf_portfolio_returns values by 252.
+> **Hint** To calculate the annualized returns, multiply the mean of the etf_portfolio_returns values by 252.
 
 To convert the decimal values to percentages, multiply the results by 100.
 
@@ -83,7 +83,7 @@ Use the average daily returns in the etf_portfolio_returns DataFrame to calculat
 
 Using hvPlot, create an interactive line plot that visualizes the cumulative return values of the ETF portfolio. Reflect the “time” column of the DataFrame on the x-axis. Make sure that you professionally style and format your visualization to enhance its readability.
 
-## Deploy the Notebook as a Web Application
+## **Deploy the Notebook as a Web Application**
 For this part of the assignment, complete the following steps:
 
 Use the Voilà library to deploy your notebook as a web application. You can deploy the web application locally on your computer.
