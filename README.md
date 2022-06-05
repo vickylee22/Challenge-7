@@ -69,6 +69,7 @@ Complete the following steps:
 2. Create a DataFrame that averages the “daily_returns” columns for all four assets. Review the resulting DataFrame.
 
 > **Hint** Assuming that this ETF contains equally weighted returns, you can average the returns for each asset to get the average returns of the portfolio. You can then use the average returns of the portfolio to calculate the annualized returns and the cumulative returns. For the calculation to get the average daily returns for the portfolio, use the following code: 
+> 
 > etf_portfolio_returns = etf_portfolio['daily_returns'].mean(axis=1)
 > You can use the average daily returns of the portfolio the same way that you used the daily returns of a single asset.
 
