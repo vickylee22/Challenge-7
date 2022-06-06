@@ -88,4 +88,5 @@ For this part of the assignment, complete the following steps:
 
 1. Use the Voilà library to deploy your notebook as a web application. You can deploy the web application locally on your computer.
 
-2. Take a screen recording or screenshots to show how the web application appears when using Voilà. Include the recording or screenshots in the ```README.md``` file for your GitHub repository.
+2. Take a screen recording or screenshots to show how the web application appears when using Voilà. Include the recording or screenshots in the ```README.md``` file for your GitHub repository. It should looks something like the following:
+![viola.png]
